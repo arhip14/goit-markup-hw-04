@@ -94,13 +94,11 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
   color: var(--secondary-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  /* display: flex; */
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -132,7 +130,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
-  /* border: none; */
   border-radius: 4px;
 }
 .btn:hover,
@@ -157,9 +154,7 @@ body {
   border: 1px solid #E7E9FC;
 }
 .nav-item-btn:not(:last-child) {
-
   margin-right: 24px; 
-
 }
 
 .list {
@@ -220,6 +215,7 @@ body {
 .sub-descr {
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 8px;
 }
 
 .team-worker {
@@ -230,7 +226,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
-
 }
 
 .hero {
@@ -240,24 +235,11 @@ body {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1.png);
   background-size: cover;
 }
-.hero-content {
-  /* background-image: url(../images/people-office\ 1.png);
-  background-size: cover; */
-  /* padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; */
-}
 .team {
   background-color: var(--teaam-section-color);
   padding-top: 120px;
   padding-bottom: 120px;
 }
-/* .team-title {
-  text-align: center;
-  margin-bottom: 72px;
-} */
-
 .team-list {
   display: flex;
   gap: 24px;
@@ -274,11 +256,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .social-list {
-  display:flex;
-  gap:24px;
+  display: flex;
+  gap: 24px;
   justify-content: center;
 }
 .social-list-icon {
@@ -287,10 +268,7 @@ body {
 }
 .social-list-link:hover , .social-list-link:focus {
   background-color: var(--btn--hover--color);
-
 }
-
-
 .advatages-list {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -315,7 +293,6 @@ body {
   display: flex;
   gap: 24px;
 }
-
 .nav-list-portfolio {
   display:flex;
   justify-content: center;
@@ -335,11 +312,13 @@ body {
 .filter-item {
   flex-basis: calc((100% - 48px) / 3);
 }
+.filter-item:hover ,.filter-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
  .portfolio-item {
   border:1px solid var(--footer-text-color);
   border-top:none;
   padding: 32px 16px;
-
 }
 .portfolio {
   padding-top: 96px;
@@ -372,25 +351,14 @@ body {
   border: 1px solid #8E8F99;
   border-radius: 4px;
 }
-/* .customers-item:hover , .customers-item:focus{
-  fill: #404BBF;
-  border-color: #404BBF
-
-} */
-
-/* .cusromers-item-link {
-
-} */
-/* .customers-item-link:hover ,.cutromers-item-link:focus {
-  fill: #404BBF;
-  border-color: #404BBF
-} */
 .customers-link {
   display:flex;
   justify-content: center;
 }
 .customers-item:hover ,.customers-item:focus {
   color: var(--btn--hover--color);
+  fill: currentColor;
+  border-color: #404BBF;
 }
 .customers-link:not(:last-child) {
   padding-right: 24px;
@@ -399,10 +367,6 @@ body {
   width: 16px;
   height: 16px;
 }
-/* .svg-logo:hover, .svg-logo:focus {
-  background-color:var(--btn--hover--color);
-
-} */
 .footer-title {
   font-family: 'Roboto';
 font-style: normal;
@@ -411,29 +375,18 @@ font-size: 16px;
 line-height: 1.5;
 color:var(--btn-hero-color)
 }
-
 .footer-social-list-icon {
   fill:var(--teaam-section-color);
-
 }
 .footer-social {
   display: flex;
   justify-content: center;
 }
-
-
-/* .social-list {
-  display:flex;
-  gap:24px;
-  justify-content: center;
-  margin-top: 32px;
-} */
-
 .footer {
-    display: flex;
-    background-color: var(--secondary-text-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+  display: flex;
+  background-color: var(--secondary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-title {
   margin-bottom: 16px;
@@ -450,17 +403,15 @@ color:var(--btn-hero-color)
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .footer-social-list-link:hover , .footer-social-list-link:focus {
   background-color: #31D0AA;
-
 }
 .advantages-link {
   background-color: var(--teaam-section-color);
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
 }
@@ -468,3 +419,14 @@ color:var(--btn-hero-color)
   height: 64px;
   width: 64px;
 }
+.footer-wraper {
+  display:flex;
+}
+.footer-info {
+  display:block;
+  margin-right: 120px;
+}
+.soc-media {
+  display: block;
+}
+
