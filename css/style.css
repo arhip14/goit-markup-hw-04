@@ -40,6 +40,7 @@ body {
 /* Header */
 .header {
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
   width: 1158px;
@@ -220,6 +221,8 @@ body {
 
 .team-worker {
   padding: 32px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-descr {
   margin-bottom:8px ;
@@ -261,10 +264,6 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
-}
-.social-list-icon {
-  fill:var(--teaam-section-color);
-
 }
 .social-list-link:hover , .social-list-link:focus {
   background-color: var(--btn--hover--color);
@@ -309,11 +308,19 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
+.portfolio-item-link {
+  text-decoration: none;
+  display: block;
+}
+.portfolio-item-link:hover , .portfolio-item-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border: 0.5px solid #F4F4FD;
+}
+.potfolio-subdescr {
+  color:var(--primary-text-color)
+}
 .filter-item {
   flex-basis: calc((100% - 48px) / 3);
-}
-.filter-item:hover ,.filter-item:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
  .portfolio-item {
   border:1px solid var(--footer-text-color);
@@ -346,10 +353,12 @@ body {
 .customers-item {
   color: #8E8F99;
   border: 1px solid #8E8F99;
-  padding: 16px 32px;
   fill:#8E8F99;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
 }
 .customers-link {
   display:flex;
@@ -357,23 +366,26 @@ body {
 }
 .customers-item:hover ,.customers-item:focus {
   color: var(--btn--hover--color);
-  fill: currentColor;
   border-color: #404BBF;
 }
-.customers-link:not(:last-child) {
-  padding-right: 24px;
-}
 .social-list-icon {
+  fill:var(--teaam-section-color);
+}
+.social-list-icon-team{
   width: 16px;
   height: 16px;
 }
+.social-list-icon-footer {
+  width: 24px;
+  height: 24px;
+}
 .footer-title {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-color:var(--btn-hero-color)
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color:var(--btn-hero-color)
 }
 .footer-social-list-icon {
   fill:var(--teaam-section-color);
@@ -412,7 +424,7 @@ color:var(--btn-hero-color)
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 264px;
+  border-radius: 4px;
   height: 112px;
 }
 .advantages-link-item {
@@ -429,4 +441,6 @@ color:var(--btn-hero-color)
 .soc-media {
   display: block;
 }
-
+.svg-logo {
+  fill: currentColor;
+}
